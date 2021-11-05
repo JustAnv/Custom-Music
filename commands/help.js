@@ -34,7 +34,12 @@ module.exports = {
               `To get info of each command type ${
                 GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
               }help [Command] | Have a nice day!`
-            ).setDescription([Invite me](client.botconfig.Invite))
+            ).setDescription(`${Commands.join("\n")}
+  
+  Discord Music Bot Version: v${require("../package.json").version}
+  [✨ Support Server](${
+    client.botconfig.Invite
+  }) | [Invite me](https://discord.com/api/oauth2/authorize?client_id=812939395866034208&permissions=518118178240&redirect_uri=https%3A%2F%2Fstrix-pro-music-bot.mruncommonx.repl.co%2F&response_type=code&scope=identify%20guilds%20bot%20applications.commands) | By [MrUncommonX](https://youtube.com/channel/UCP7VAGyM2qnZYDRlgoMDp2Q)`);
 
     if (!args[0]) message.channel.send(Embed);
     else {
@@ -111,7 +116,12 @@ SlashCommand: {
               `To get info of each command type ${
                 GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
               }help [Command] | Have a nice day!`
-            ).setDescription([Invite me](client.botconfig.Invite))
+            ).setDescription(`${Commands.join("\n")}
+  
+  Discord Music Bot Version: v${require("../package.json").version}
+  [✨ Support Server](${
+    client.botconfig.Invite
+  }) | [Invite me](https://discord.com/api/oauth2/authorize?client_id=812939395866034208&permissions=518118178240&redirect_uri=https%3A%2F%2Fstrix-pro-music-bot.mruncommonx.repl.co%2F&response_type=code&scope=identify%20guilds%20bot%20applications.commands) | By [MrUncommonX](https://youtube.com/channel/UCP7VAGyM2qnZYDRlgoMDp2Q)`);
       if (!args) return interaction.send(Embed);
       else {
         let cmd =
