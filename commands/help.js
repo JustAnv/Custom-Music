@@ -114,8 +114,7 @@ SlashCommand: {
               }help [Command] | Have a nice day!`
             ).setDescription(`${Commands.join("\n")}
   
-  Discord Music Bot Version: v${require("../package.json").version}
-  }) | [Invite me](https://discord.com/api/oauth2/authorize?client_id=906178578205507654&permissions=8&scope=bot%20applications.commands)
+      [Invite me](https://discord.com/api/oauth2/authorize?client_id=906178578205507654&permissions=8&scope=bot%20applications.commands)
       if (!args) return interaction.send(Embed);
       else {
         let cmd =
