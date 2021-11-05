@@ -34,7 +34,7 @@ module.exports = {
               `To get info of each command type ${
                 GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
               }help [Command] | Have a nice day!`
-            ).setDescription([Invite Me](client.botconfig.Invite))
+            ).setDescription(['Invite Me'](client.botconfig.Invite))
 
     if (!args[0]) message.channel.send(Embed);
     else {
