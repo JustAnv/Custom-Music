@@ -111,7 +111,7 @@ SlashCommand: {
               `To get info of each command type ${
                 GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
               }help [Command] | Have a nice day!`
-            ).setDescription(['Invite me'](client.botconfig.Invite))
+            ).setDescription(['Invite Me'](client.botconfig.Invite))
       if (!args) return interaction.send(Embed);
       else {
         let cmd =
